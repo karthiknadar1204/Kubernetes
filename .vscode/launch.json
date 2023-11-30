@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": "Docker Node.js Launch",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "docker-run: debug",
+            "platform": "node",
+            "node": {
+                "package": "${workspaceFolder}/k8s-web-hello/package.json",
+                "localRoot": "${workspaceFolder}/k8s-web-hello"
+            }
+        }
+    ]
+}
